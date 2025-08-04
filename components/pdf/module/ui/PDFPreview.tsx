@@ -17,11 +17,11 @@ pdfContainerRef: React.RefObject<HTMLDivElement | null>;
 
 }) => {
   return (
-    <div className="flex-1  flex flex-col">
-      <div className="p-4  border-gray-200/50">
+    <div className="flex-1 bg-gradient-to-br from-gray-50 to-blue-50 flex flex-col">
+      <div className="p-4 bg-white/80 backdrop-blur-sm border-b border-gray-200/50">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-4">
-            <div className="p-2 bg-gradient-to-r from-green-500 to-emerald-500 rounded-xl ">
+            <div className="p-2 bg-gradient-to-r from-green-500 to-emerald-500 rounded-xl text-white shadow-md">
               <FileCheck className="w-5 h-5" />
             </div>
             <div>

@@ -1390,7 +1390,7 @@ export default function Home() {
 			</div>
 
 			{/* Right Side - PDF Preview */}
-			<div className="flex-1 bg-gradient-to-br from-gray-50 to-blue-50 flex flex-col">
+			<div className="flex-1  flex flex-col">
 			  <div className="p-4 bg-white/80 backdrop-blur-sm border-b border-gray-200/50">
 				<div className="flex items-center justify-between">
 				  <div className="flex items-center gap-4">
@@ -1405,7 +1405,7 @@ export default function Home() {
 					</div>
 				  </div>
 				  
-				  <div className="flex items-center gap-3">
+				  {/* <div className="flex items-center gap-3">
 					<button
 					  onClick={() => setCurrentView('review')}
 					  className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-4 py-2 rounded-xl font-medium hover:from-blue-700 hover:to-purple-700 transition-all duration-200 shadow-md hover:shadow-lg"
@@ -1435,7 +1435,7 @@ export default function Home() {
 					<button className="p-2 hover:bg-gray-100 rounded-xl transition-colors">
 					  <Download className="w-4 h-4" />
 					</button>
-				  </div>
+				  </div> */}
 				</div>
 			  </div>
 			  
@@ -1465,7 +1465,7 @@ export default function Home() {
 
 			  <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6 mb-8">
 				{/* Summary Card */}
-				<div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-gray-200/50">
+				<div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6  border-gray-200/50">
 				  <div className="flex items-center gap-3 mb-4">
 					<div className="p-3 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-xl text-white shadow-md">
 					  <FileText className="w-6 h-6" />
