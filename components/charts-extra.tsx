@@ -11,7 +11,9 @@ interface CustomTooltipContentProps extends TooltipProps<number, string> {
 
 export function CustomTooltipContent({
   active,
+  // @ts-ignore
   payload,
+  // @ts-ignore
   label,
   colorMap = {},
   labelMap = {},
@@ -24,7 +26,7 @@ export function CustomTooltipContent({
 
   // Create a map of payload items by dataKey for easy lookup
   const payloadMap = payload.reduce(
-    (acc, item) => {
+    (acc:any, item:any) => {
       acc[item.dataKey as string] = item;
       return acc;
     },
@@ -43,7 +45,7 @@ export function CustomTooltipContent({
     <div className="bg-popover text-popover-foreground grid min-w-32 items-start gap-1.5 rounded-lg border px-3 py-1.5 text-xs">
       <div className="font-medium">{label}</div>
       <div className="grid gap-1.5">
-        {orderedPayload.map((entry, index) => {
+        {orderedPayload.map((entry:any, index:any) => {
           // Skip undefined entries
           if (!entry) return null;
 
